@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Standard HTML setup stuff, don't worry about what this does, just include it-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Title of the page- shows up in the browser tab-->
+    <title>Blackjack</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!--Login information- hidden while in game-->
+    <div id="login-wrapper">
+        <div class="input-label">Deck Name</div>
+        <input type="text" placeholder="myBlackjackDeck" id="deckNameInput" />
+        <div id="enter-game-button" class="button">Create/Load Game</div>
+    </div>
+    <!--Game information- hidden while logging in-->
+    <div id="game-wrapper" class="hidden">
+        <div id="dealer-and-player-wrapper">
+            <div id="dealer-wrapper">
+                <div class="title">Dealer Hand</div>
+                <div id="dealer-card-wrapper">
+                    <div class="card">Placeholder Card</div>
+                </div>
+            </div>
+            <div id="player-wrapper">
+                    <div class="title">Player Hand</div>
+                    <div id="player-card-wrapper">
+                        <div class="card">Placeholder Card</div>
+                    </div>
+                </div>
+        </div>
+        <div id="actions-wrapper">
+            <div id="hit-button">Hit</div>
+            <div id="stand-button">Stand</div>
+        </div>
+        <div id="info-banner">Games won: 0, Games lost: 0</div>
+    </div>
+</body>
+<!--Load scripts and styles at the end- ensures elements are loaded before trying to add event listeners, and speeds up l=page load times-->
+<link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+<script src="index.js"></script>
+</html>
