@@ -1,5 +1,5 @@
 {
-    "PORT": 4000,
+    "PORT": 3306,
     "apiEndpoint": "https://deckofcardsapi.com/api/deck",
     "mysqlHost": "ese205ta.ckihod5cm1qn.us-east-2.rds.amazonaws.com",
     "mysqlUser": "keith",
